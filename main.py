@@ -7,11 +7,13 @@ print("项目地址:https://github.com/JasonYANG170/OA-Sgin")
 print("Wiki文档:https://github.com/JasonYANG170/OA-Sgin/wiki")
 print("使用教程请查看Wiki文档")
 # 手动输入信息
+
 longitude = input("请输入经度 (longitude): ")
 latitude = input("请输入纬度 (latitude): ")
 signaddress = input("请输入地址 (signaddress): ")
 start_date = input("请输入起始日期 (格式 YYYY-MM-DD): ")
 end_date = input("请输入结束日期 (格式 YYYY-MM-DD): ")
+student_id = input("请输入 studentid: ")
 access_token = input("请输入 X-Access-Token: ")
 
 # URL 和请求头
@@ -36,7 +38,7 @@ current_date = start_date_obj
 while current_date <= end_date_obj:
     date_str = current_date.strftime("%Y-%m-%d")
     payload = {
-        "probationaryworkplacementstudentid": 1198,
+        "probationaryworkplacementstudentid": int(student_id),
         "longitude": float(longitude),
         "latitude": float(latitude),
         "date": date_str,
