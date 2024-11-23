@@ -8,7 +8,7 @@
 
 [![Discord](https://img.shields.io/discord/978108215499816980?style=social&logo=discord&label=echosec)](https://discord.com/invite/az3ceRmgVe)
 
-![image](https://github.com/user-attachments/assets/8fe9b9e5-9fe4-49c7-b176-6e9c7cf1b192)
+
 
 
 这是一项基于python的OA签到脚本
